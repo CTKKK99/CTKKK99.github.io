@@ -1,0 +1,93 @@
+
+<html lang="zh-CN">
+<head>
+    <!-- 引入 Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 设置视口以确保响应式布局 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 设置字符编码为 UTF-8 -->
+    <meta charset="UTF-8">
+    <title>关于作者</title>
+    <!-- 引入 Inter 字体以获得更好的排版 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* 自定义背景图样式 */
+        .header-bg {
+            /* 替换成你自己的背景图 URL */
+            background-image: url('https://placehold.co/1200x400/333333/FFFFFF?text=.'); 
+            background-size: cover; /* 确保背景图覆盖整个区域 */
+            background-position: center; /* 将背景图居中显示 */
+            background-repeat: no-repeat; /* 不重复背景图 */
+        }
+    </style>
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <div class="container mx-auto p-4 md:p-8 lg:p-12">
+        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden">
+            <!-- 头部和个人信息 - 添加了背景图 -->
+            <div class="header-bg flex flex-col items-center justify-center p-6 sm:p-8 lg:p-10 text-center">
+                <!-- 头像 -->
+                <img class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover ring-4 ring-white dark:ring-gray-700 shadow-lg" 
+                     src="https://ctkkk.oss-cn-hongkong.aliyuncs.com/images/tx1.jpg" 
+                     alt="个人头像">
+                <!-- 姓名 - 字体大小改为 lg:text-5xl -->
+                <h1 class="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white drop-shadow-lg">Corwin Chen</h1>
+                <!-- 座右铭/简介 - 字体大小改为 lg:text-xl -->
+                <p class="mt-2 text-base md:text-lg lg:text-xl font-medium text-gray-200 dark:text-gray-400 drop-shadow-lg">✨️</p>
+            </div>
+
+            <!-- 个人简介内容 -->
+            <div class="p-6 sm:p-8 lg:p-10 border-t border-gray-200 dark:border-gray-700">
+                <div class="prose max-w-none text-left">
+                    <!-- 关于我 - 字体大小改为 md:text-3xl -->
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-gray-800 dark:text-gray-200">关于我</h2>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                        在这里写下你的个人简介。你可以谈论你的兴趣爱好、工作经历、学习历程，或者任何你想要分享的事情。
+                        例如：我是一名热衷于前端开发的工程师，喜欢用代码创造有趣和实用的产品。在闲暇之余，我喜欢阅读、旅行和摄影。
+                    </p>
+                    
+                    <!-- 我的技能 - 字体大小改为 md:text-2xl -->
+                    <h3 class="text-xl md:text-2xl font-semibold mt-8 mb-4 text-gray-800 dark:text-gray-200">我的技能</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                        <li>前端开发（HTML, CSS, JavaScript, React/Vue）</li>
+                        <li>后端技术（Node.js, Python）</li>
+                        <li>数据库（MySQL, MongoDB）</li>
+                        <li>其他（Git, Docker, etc.）</li>
+                    </ul>
+                    
+                    <!-- 联系方式 - 字体大小改为 md:text-2xl -->
+                    <h3 class="text-xl md:text-2xl font-semibold mt-8 mb-4 text-gray-800 dark:text-gray-200">联系方式</h3>
+                    <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+                        <li>
+                            <a href="mailto:your-email@example.com" class="flex items-center space-x-2 text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                <span>your-email@example.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/your-username" target="_blank" class="flex items-center space-x-2 text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.5 0 4-2.5 4-5A4.3 4.3 0 0 0 18 6.5C18 6.5 16.5 6 15 7s-1.5 1-1.5 1a4 4 0 0 1-2 4a4 4 0 0 1-2-4s-1.5 0-1.5-1a4 4 0 0 1-2 0c-1.5 0-2.5 2-2.5 5a4.3 4.3 0 0 0 1.5 3.5c-1 0-1.5 1-1.5 1v4"/><path d="M9 18v-4h6v4"/><path d="M12 2a10 10 0 0 0-4 18l-1.5 1.5M12 2a10 10 0 0 1 4 18l1.5 1.5"/><circle cx="12" cy="12" r="10"/></svg>
+                                <span>github.com/your-username</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/your-twitter" target="_blank" class="flex items-center space-x-2 text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c-2.3 2.7-5.5 5-8 5s-5.7-2.3-8-5c-1.3-1.3-2-3.4-2-3.4s2 1.5 4.5 3.5c1.5 1.2 3.5 2 5.5 2s4-1 5.5-2c2.5-2 4.5-3.5 4.5-3.5z"/><path d="M20 12c-2.3 2.7-5.5 5-8 5s-5.7-2.3-8-5c-1.3-1.3-2-3.4-2-3.4s2 1.5 4.5 3.5c1.5 1.2 3.5 2 5.5 2s4-1 5.5-2c2.5-2 4.5-3.5 4.5-3.5z"/><path d="M22 20s-.7 2.1-2 3.4c-2.3 2.7-5.5 5-8 5s-5.7-2.3-8-5c-1.3-1.3-2-3.4-2-3.4s2 1.5 4.5 3.5c1.5 1.2 3.5 2 5.5 2s4-1 5.5-2c2.5-2 4.5-3.5 4.5-3.5z"/></svg>
+                                <span>Twitter</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
